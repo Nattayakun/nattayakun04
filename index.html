@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Gallery | โลกแห่งดอกไม้</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">Bloom<span>.</span></div>
+            <a href="#gallery" class="nav-link">Explore Gallery ↗</a>
+        </nav>
+
+        <div class="hero-content">
+            <p class="eyebrow">THE BEAUTY OF NATURE</p>
+
+            <h1>Bloom <span>Gallery</span></h1>
+
+            <p class="description">
+                Discover the beauty of flowers.
+                Explore colors, nature and the little things
+                that make our world beautiful.
+            </p>
+
+            <a href="#gallery" class="explore-btn">
+                Explore Flowers ↓
+            </a>
+        </div>
+
+        <div class="hero-decoration">✿</div>
+    </header>
+
+
+    <!-- GALLERY -->
+    <main id="gallery" class="gallery-section">
+
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">OUR COLLECTION</p>
+                <h2>Explore the Gallery</h2>
+                <p class="section-description">
+                    รวมความงดงามของดอกไม้หลากหลายชนิด
+                </p>
+            </div>
+
+            <div class="flower-count">
+                <span id="flowerCount">9</span>
+                <small>FLOWERS</small>
+            </div>
+        </div>
+
+
+        <!-- FILTER BUTTONS -->
+        <div class="filter-buttons">
+
+            <button class="filter-btn active" data-filter="all">
+                ทั้งหมด
+            </button>
+
+            <button class="filter-btn" data-filter="popular">
+                ดอกไม้ยอดนิยม
+            </button>
+
+            <button class="filter-btn" data-filter="ornamental">
+                ดอกไม้ประดับ
+            </button>
+
+            <button class="filter-btn" data-filter="rare">
+                ดอกไม้หายาก
+            </button>
+
+        </div>
+
+
+        <!-- FLOWER CARDS -->
+        <div class="flower-grid" id="flowerGrid">
+
+            <!-- CARD 1 -->
+            <article class="flower-card" data-category="popular">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800"
+                         alt="ดอกกุหลาบ">
+                    <span class="category-label">POPULAR</span>
+                </div>
+                <div class="card-content">
+                    <span class="number">01 / FLOWER</span>
+                    <h3>Rose</h3>
+                    <p>ดอกกุหลาบ</p>
+                    <div class="card-footer">
+                        <span>ความรักและความงดงาม</span>
+                        <span class="flower-icon">✿</span>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- CARD 2 -->
+            <article class="flower-card" data-category="popular">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?w=800"
+                         alt="ดอกทิวลิป">
+                    <span class="category-label">POPULAR</span>
+                </div>
+                <div class="card-content">
+                    <span class="number">02 / FLOWER</span>
+                    <h3>Tulip</h3>
+                    <p>ดอกทิวลิป</p>
+                    <div class="card-footer">
+                        <span>ความสดใสและความหวัง</span>
+                        <span class="flower-icon">✿</span>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- CARD 3 -->
+            <article class="flower-card" data-category="popular">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1499002238440-d264edd596ec?w=800"
+                         alt="ดอกทานตะวัน">
+                    <span class="category-label">POPULAR</span>
+                </div>
+                <div class="card-content">
+                    <span class="number">03 / FLOWER</span>
+                    <h3>Sunflower</h3>
+                    <p>ดอกทานตะวัน</p>
+                    <div class="card-footer">
+                        <span>ความสุขและพลังบวก</span>
+                        <span class="flower-icon">✿</span>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- CARD 4 -->
+            <article class="flower-card" data-category="ornamental">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?w=800"
+                         alt="ดอกกล้วยไม้">
+                    <span class="category-label">ORNAMENTAL</span>
+                </div>
+                <div class="card-content">
+                    <span class="number">04 / FLOWER</span>
+                    <h3>Orchid</h3>
+                    <p>ดอกกล้วยไม้</p>
+                    <div class="card-footer">
+                        <span>ความสง่างามและความประณีต</span>
+                        <span class="flower-icon">✿</span>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- CARD 5 -->
+            <article class="flower-card" data-category="ornamental">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?w=800"
+                         alt="ดอกไฮเดรนเยีย">
+                    <span class="category-label">ORNAMENTAL</span>
+                </div>
+                <div class="card-content">
+                    <span class="number">05 / FLOWER</span>
+                    <h3>Hydrangea</h3>
+                    <p>ดอกไฮเดรนเยีย</p>
+                    <div class="card-footer">
+                        <span>ความอ่อนโยนและความเข้าใจ</span>
+                        <span class="flower-icon">✿</span>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- CARD 6 -->
+            <article class="flower-card" data-category="ornamental">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?w=800"
+                         alt="ดอกโบตั๋น">
+                    <span class="category-label">ORNAMENTAL</span>
+                </div>
+                <div class="card-content">
+                    <span class="number">06 / FLOWER</span>
+                    <h3>Peony</h3>
+                    <p>ดอกโบตั๋น</p>
+                    <div class="card-footer">
+                        <span>ความมั่งคั่งและความโชคดี</span>
+                        <span class="flower-icon">✿</span>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- CARD 7 -->
+            <article class="flower-card" data-category="rare">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=800"
+                         alt="ดอกป๊อปปี้">
+                    <span class="category-label">RARE</span>
+                </div>
+                <div class="card-content">
+                    <span class="number">07 / FLOWER</span>
+                    <h3>Poppy</h3>
+                    <p>ดอกป๊อปปี้</p>
+                    <div class="card-footer">
+                        <span>ความทรงจำและจินตนาการ</span>
+                        <span class="flower-icon">✿</span>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- CARD 8 -->
+            <article class="flower-card" data-category="rare">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1462275646964-a0e3386b89fa?w=800"
+                         alt="ดอกไม้ป่าสีม่วง">
+                    <span class="category-label">RARE</span>
+                </div>
+                <div class="card-content">
+                    <span class="number">08 / FLOWER</span>
+                    <h3>Wildflower</h3>
+                    <p>ดอกไม้ป่า</p>
+                    <div class="card-footer">
+                        <span>ความเป็นอิสระและธรรมชาติ</span>
+                        <span class="flower-icon">✿</span>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- CARD 9 -->
+            <article class="flower-card" data-category="rare">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=800"
+                         alt="ดอกไม้ในทุ่งธรรมชาติ">
+                    <span class="category-label">RARE</span>
+                </div>
+                <div class="card-content">
+                    <span class="number">09 / FLOWER</span>
+                    <h3>Blossom</h3>
+                    <p>ดอกไม้แห่งธรรมชาติ</p>
+                    <div class="card-footer">
+                        <span>ความงดงามที่เรียบง่าย</span>
+                        <span class="flower-icon">✿</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <p id="emptyMessage" class="empty-message" hidden>
+            ไม่พบข้อมูลดอกไม้ในหมวดหมู่นี้ 🌷
+        </p>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <h2>Bloom<span>.</span></h2>
+        <p>Every flower blooms in its own time.</p>
+        <p class="copyright">© 2026 Bloom Gallery | Created with love ♡</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
