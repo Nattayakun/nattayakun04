@@ -4,274 +4,248 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bloom Gallery | โลกแห่งดอกไม้</title>
-
+    <title>COCKTAIL | THE LEGACY</title>
     <link rel="stylesheet" href="style.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-    <!-- HEADER -->
-    <header class="hero">
-        <nav class="navbar">
-            <div class="logo">Bloom<span>.</span></div>
-            <a href="#gallery" class="nav-link">Explore Gallery ↗</a>
-        </nav>
-
-        <div class="hero-content">
-            <p class="eyebrow">THE BEAUTY OF NATURE</p>
-
-            <h1>Bloom <span>Gallery</span></h1>
-
-            <p class="description">
-                Discover the beauty of flowers.
-                Explore colors, nature and the little things
-                that make our world beautiful.
-            </p>
-
-            <a href="#gallery" class="explore-btn">
-                Explore Flowers ↓
-            </a>
+<header class="hero">
+    <nav class="navbar">
+        <a class="logo" href="#">C<span>.</span></a>
+        <div class="nav-menu">
+            <a href="#about">ABOUT</a>
+            <a href="#gallery">GALLERY</a>
+            <a href="#music">MUSIC</a>
         </div>
+        <span class="nav-label">THE LEGACY OF COCKTAIL</span>
+    </nav>
 
-        <div class="hero-decoration">✿</div>
-    </header>
-
-
-    <!-- GALLERY -->
-    <main id="gallery" class="gallery-section">
-
-        <div class="section-heading">
-            <div>
-                <p class="eyebrow">OUR COLLECTION</p>
-                <h2>Explore the Gallery</h2>
-                <p class="section-description">
-                    รวมความงดงามของดอกไม้หลากหลายชนิด
-                </p>
-            </div>
-
-            <div class="flower-count">
-                <span id="flowerCount">9</span>
-                <small>FLOWERS</small>
-            </div>
-        </div>
-
-
-        <!-- FILTER BUTTONS -->
-        <div class="filter-buttons">
-
-            <button class="filter-btn active" data-filter="all">
-                ทั้งหมด
-            </button>
-
-            <button class="filter-btn" data-filter="popular">
-                ดอกไม้ยอดนิยม
-            </button>
-
-            <button class="filter-btn" data-filter="ornamental">
-                ดอกไม้ประดับ
-            </button>
-
-            <button class="filter-btn" data-filter="rare">
-                ดอกไม้หายาก
-            </button>
-
-        </div>
-
-
-        <!-- FLOWER CARDS -->
-        <div class="flower-grid" id="flowerGrid">
-
-            <!-- CARD 1 -->
-            <article class="flower-card" data-category="popular">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800"
-                         alt="ดอกกุหลาบ">
-                    <span class="category-label">POPULAR</span>
-                </div>
-                <div class="card-content">
-                    <span class="number">01 / FLOWER</span>
-                    <h3>Rose</h3>
-                    <p>ดอกกุหลาบ</p>
-                    <div class="card-footer">
-                        <span>ความรักและความงดงาม</span>
-                        <span class="flower-icon">✿</span>
-                    </div>
-                </div>
-            </article>
-
-
-            <!-- CARD 2 -->
-            <article class="flower-card" data-category="popular">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?w=800"
-                         alt="ดอกทิวลิป">
-                    <span class="category-label">POPULAR</span>
-                </div>
-                <div class="card-content">
-                    <span class="number">02 / FLOWER</span>
-                    <h3>Tulip</h3>
-                    <p>ดอกทิวลิป</p>
-                    <div class="card-footer">
-                        <span>ความสดใสและความหวัง</span>
-                        <span class="flower-icon">✿</span>
-                    </div>
-                </div>
-            </article>
-
-
-            <!-- CARD 3 -->
-            <article class="flower-card" data-category="popular">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1499002238440-d264edd596ec?w=800"
-                         alt="ดอกทานตะวัน">
-                    <span class="category-label">POPULAR</span>
-                </div>
-                <div class="card-content">
-                    <span class="number">03 / FLOWER</span>
-                    <h3>Sunflower</h3>
-                    <p>ดอกทานตะวัน</p>
-                    <div class="card-footer">
-                        <span>ความสุขและพลังบวก</span>
-                        <span class="flower-icon">✿</span>
-                    </div>
-                </div>
-            </article>
-
-
-            <!-- CARD 4 -->
-            <article class="flower-card" data-category="ornamental">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?w=800"
-                         alt="ดอกกล้วยไม้">
-                    <span class="category-label">ORNAMENTAL</span>
-                </div>
-                <div class="card-content">
-                    <span class="number">04 / FLOWER</span>
-                    <h3>Orchid</h3>
-                    <p>ดอกกล้วยไม้</p>
-                    <div class="card-footer">
-                        <span>ความสง่างามและความประณีต</span>
-                        <span class="flower-icon">✿</span>
-                    </div>
-                </div>
-            </article>
-
-
-            <!-- CARD 5 -->
-            <article class="flower-card" data-category="ornamental">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?w=800"
-                         alt="ดอกไฮเดรนเยีย">
-                    <span class="category-label">ORNAMENTAL</span>
-                </div>
-                <div class="card-content">
-                    <span class="number">05 / FLOWER</span>
-                    <h3>Hydrangea</h3>
-                    <p>ดอกไฮเดรนเยีย</p>
-                    <div class="card-footer">
-                        <span>ความอ่อนโยนและความเข้าใจ</span>
-                        <span class="flower-icon">✿</span>
-                    </div>
-                </div>
-            </article>
-
-
-            <!-- CARD 6 -->
-            <article class="flower-card" data-category="ornamental">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?w=800"
-                         alt="ดอกโบตั๋น">
-                    <span class="category-label">ORNAMENTAL</span>
-                </div>
-                <div class="card-content">
-                    <span class="number">06 / FLOWER</span>
-                    <h3>Peony</h3>
-                    <p>ดอกโบตั๋น</p>
-                    <div class="card-footer">
-                        <span>ความมั่งคั่งและความโชคดี</span>
-                        <span class="flower-icon">✿</span>
-                    </div>
-                </div>
-            </article>
-
-
-            <!-- CARD 7 -->
-            <article class="flower-card" data-category="rare">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=800"
-                         alt="ดอกป๊อปปี้">
-                    <span class="category-label">RARE</span>
-                </div>
-                <div class="card-content">
-                    <span class="number">07 / FLOWER</span>
-                    <h3>Poppy</h3>
-                    <p>ดอกป๊อปปี้</p>
-                    <div class="card-footer">
-                        <span>ความทรงจำและจินตนาการ</span>
-                        <span class="flower-icon">✿</span>
-                    </div>
-                </div>
-            </article>
-
-
-            <!-- CARD 8 -->
-            <article class="flower-card" data-category="rare">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1462275646964-a0e3386b89fa?w=800"
-                         alt="ดอกไม้ป่าสีม่วง">
-                    <span class="category-label">RARE</span>
-                </div>
-                <div class="card-content">
-                    <span class="number">08 / FLOWER</span>
-                    <h3>Wildflower</h3>
-                    <p>ดอกไม้ป่า</p>
-                    <div class="card-footer">
-                        <span>ความเป็นอิสระและธรรมชาติ</span>
-                        <span class="flower-icon">✿</span>
-                    </div>
-                </div>
-            </article>
-
-
-            <!-- CARD 9 -->
-            <article class="flower-card" data-category="rare">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=800"
-                         alt="ดอกไม้ในทุ่งธรรมชาติ">
-                    <span class="category-label">RARE</span>
-                </div>
-                <div class="card-content">
-                    <span class="number">09 / FLOWER</span>
-                    <h3>Blossom</h3>
-                    <p>ดอกไม้แห่งธรรมชาติ</p>
-                    <div class="card-footer">
-                        <span>ความงดงามที่เรียบง่าย</span>
-                        <span class="flower-icon">✿</span>
-                    </div>
-                </div>
-            </article>
-
-        </div>
-
-        <p id="emptyMessage" class="empty-message" hidden>
-            ไม่พบข้อมูลดอกไม้ในหมวดหมู่นี้ 🌷
+    <div class="hero-content">
+        <p class="hero-small">THAI ROCK BAND • EST. 2002</p>
+        <h1>COCK<span>TAIL</span></h1>
+        <h2>THE LEGACY LIVES ON.</h2>
+        <p class="hero-text">
+            เรื่องราวของเสียงดนตรี ความทรงจำ
+            และการเดินทางตลอด 23 ปีของวง COCKTAIL
         </p>
+        <a href="#about" class="hero-btn">DISCOVER MORE ↗</a>
+    </div>
 
-    </main>
+    <div class="hero-bottom">
+        <span>2002 — 2025</span>
+        <span>23 YEARS OF MUSIC</span>
+    </div>
+</header>
 
+<!-- ABOUT -->
+<section id="about" class="about-section">
+    <div class="about-image">
+        <img src="https://storage.googleapis.com/atime-media-prod/content/35958d4b-4d8d-435b-800b-50f1514e68f0.jpeg"
+             alt="วง COCKTAIL">
+    </div>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <h2>Bloom<span>.</span></h2>
-        <p>Every flower blooms in its own time.</p>
-        <p class="copyright">© 2026 Bloom Gallery | Created with love ♡</p>
-    </footer>
+    <div class="about-text">
+        <p class="section-tag">01 / ABOUT THE BAND</p>
+        <h2>MORE THAN<br>JUST MUSIC.</h2>
+        <p>
+            COCKTAIL คือวงดนตรีร็อกจากประเทศไทย
+            ที่เริ่มต้นเส้นทางดนตรีในปี 2002
+            ด้วยเอกลักษณ์ของเสียงร้องและการถ่ายทอดเรื่องราวผ่านบทเพลง
+        </p>
+        <p>
+            ตลอดระยะเวลากว่า 23 ปี วงได้สร้างผลงานเพลงมากมาย
+            และกลายเป็นหนึ่งในวงดนตรีที่มีความสำคัญ
+            ต่อวงการเพลงร็อกไทย
+        </p>
+        <div class="about-year">
+            <div>
+                <strong>2002</strong>
+                <span>BEGINNING</span>
+            </div>
+            <div>
+                <strong>2025</strong>
+                <span>FINAL CHAPTER</span>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- GALLERY -->
+<section id="gallery" class="gallery-section">
+    <div class="section-heading">
+        <div>
+            <p class="section-tag">02 / EXPLORE COLLECTION</p>
+            <h2>THE COLLECTION</h2>
+            <p>รวมเรื่องราวและผลงานที่น่าจดจำของ COCKTAIL</p>
+        </div>
+        <span class="collection-number">01 — 09</span>
+    </div>
 
-    <script src="script.js"></script>
+    <!-- FILTER -->
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">ทั้งหมด</button>
+        <button class="filter-btn" data-filter="history">ประวัติวง</button>
+        <button class="filter-btn" data-filter="music">เพลงแนะนำ</button>
+        <button class="filter-btn" data-filter="concert">คอนเสิร์ต</button>
+    </div>
+
+    <!-- CARDS -->
+    <div class="gallery-grid">
+
+        <article class="music-card" data-category="history">
+            <div class="card-image">
+                <img src="https://storage.googleapis.com/atime-media-prod/content/35958d4b-4d8d-435b-800b-50f1514e68f0.jpeg" alt="COCKTAIL Band">
+                <span class="card-number">01</span>
+            </div>
+            <div class="card-info">
+                <span class="card-category">BAND HISTORY</span>
+                <h3>THE BEGINNING</h3>
+                <p>จุดเริ่มต้นของวง COCKTAIL ในปี 2002</p>
+            </div>
+        </article>
+
+        <article class="music-card" data-category="history">
+            <div class="card-image">
+                <img src="https://s.isanook.com/jo/0/ui/495/2476173/prz_5743.jpg" alt="COCKTAIL members">
+                <span class="card-number">02</span>
+            </div>
+            <div class="card-info">
+                <span class="card-category">BAND HISTORY</span>
+                <h3>THE MEMBERS</h3>
+                <p>สมาชิกและเพื่อนร่วมเดินทางทางดนตรี</p>
+            </div>
+        </article>
+
+        <article class="music-card" data-category="history">
+            <div class="card-image">
+                <img src="https://static.thairath.co.th/media/Dtbezn3nNUxytg04ay0CjcvKHW6sAJC2TgiHTNluIi5w9n.jpg" alt="COCKTAIL farewell">
+                <span class="card-number">03</span>
+            </div>
+            <div class="card-info">
+                <span class="card-category">BAND HISTORY</span>
+                <h3>THE LAST CHAPTER</h3>
+                <p>บทสุดท้ายของการเดินทางในนาม COCKTAIL</p>
+            </div>
+        </article>
+
+        <article class="music-card" data-category="music">
+            <div class="card-image">
+                <img src="https://my.kapook.com/r/1200/630/imagescontent/fb_img/432/s_115087_1881.jpg" alt="COCKTAIL music">
+                <span class="card-number">04</span>
+            </div>
+            <div class="card-info">
+                <span class="card-category">MUSIC</span>
+                <h3>คุกเข่า</h3>
+                <p>หนึ่งในเพลงที่แฟนเพลงจดจำของ COCKTAIL</p>
+            </div>
+        </article>
+
+        <article class="music-card" data-category="music">
+            <div class="card-image">
+                <img src="https://storage.googleapis.com/atime-media-prod/content/73c4340c-e172-47c0-8e5d-403310e8333a.jpeg" alt="COCKTAIL live">
+                <span class="card-number">05</span>
+            </div>
+            <div class="card-info">
+                <span class="card-category">MUSIC</span>
+                <h3>คู่ชีวิต</h3>
+                <p>บทเพลงแห่งความรักและความผูกพัน</p>
+            </div>
+        </article>
+
+        <article class="music-card" data-category="music">
+            <div class="card-image">
+                <img src="https://www.workpointtoday.com/_next/image?q=75&url=https%3A%2F%2Fimages.workpointtoday.com%2Fworkpointnews%2F2025%2F04%2F01190633%2F1743509190_17877_COCKTAIL-EVER-LIVE.webp&w=2048" alt="COCKTAIL performance">
+                <span class="card-number">06</span>
+            </div>
+            <div class="card-info">
+                <span class="card-category">MUSIC</span>
+                <h3>ดึงดัน</h3>
+                <p>อีกหนึ่งผลงานเพลงที่เป็นที่รู้จัก</p>
+            </div>
+        </article>
+
+        <article class="music-card" data-category="concert">
+            <div class="card-image">
+                <img src="https://my.kapook.com/imagescontent/fb_img/904/s_121541_9334.jpg" alt="COCKTAIL live concert">
+                <span class="card-number">07</span>
+            </div>
+            <div class="card-info">
+                <span class="card-category">CONCERT</span>
+                <h3>THE HEARTLESS LIVE</h3>
+                <p>ความทรงจำจากการแสดงสดบนเวที</p>
+            </div>
+        </article>
+
+        <article class="music-card" data-category="concert">
+            <div class="card-image">
+                <img src="https://s.isanook.com/jo/0/ui/495/2476173/prz_5743.jpg" alt="COCKTAIL EVER LIVE">
+                <span class="card-number">08</span>
+            </div>
+            <div class="card-info">
+                <span class="card-category">CONCERT</span>
+                <h3>COCKTAIL EVER LIVE</h3>
+                <p>คอนเสิร์ตครั้งสำคัญในปี 2025</p>
+            </div>
+        </article>
+
+        <article class="music-card" data-category="concert">
+            <div class="card-image">
+                <img src="https://static.naewna.com/uploads/news/source/911204.jpg" alt="COCKTAIL 77 EVER TOUR">
+                <span class="card-number">09</span>
+            </div>
+            <div class="card-info">
+                <span class="card-category">CONCERT</span>
+                <h3>77 EVER TOUR</h3>
+                <p>การเดินทางส่งท้ายทั่ว 77 จังหวัด</p>
+            </div>
+        </article>
+
+    </div>
+
+    <p id="emptyMessage" hidden>ไม่พบข้อมูลในหมวดหมู่นี้</p>
+</section>
+
+<!-- MEMBERS -->
+<section class="members-section">
+    <p class="section-tag">03 / THE BAND</p>
+    <h2>THE MEMBERS</h2>
+
+    <div class="members-grid">
+        <div class="member">
+            <span>01</span>
+            <h3>OHM</h3>
+            <p>VOCAL</p>
+        </div>
+        <div class="member">
+            <span>02</span>
+            <h3>CHAO</h3>
+            <p>GUITAR</p>
+        </div>
+        <div class="member">
+            <span>03</span>
+            <h3>PARK</h3>
+            <p>BASS</p>
+        </div>
+        <div class="member">
+            <span>04</span>
+            <h3>PHILIPS</h3>
+            <p>DRUMS</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <h2>COCK<span>TAIL</span></h2>
+    <p>THE MUSIC NEVER ENDS.</p>
+    <div class="footer-line"></div>
+    <p class="copyright">
+        © 2026 COCKTAIL FAN GALLERY | FOR EDUCATIONAL PURPOSES
+    </p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
